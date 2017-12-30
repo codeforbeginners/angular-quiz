@@ -1,0 +1,29 @@
+[{
+	"question":"Brass gets discoloured in air because of the presence of which of the following gases in air?",
+	"answer" : {
+		"a": "Oxygen",
+		"b": "Hydrogen sulphide",
+		"c": "Carbon dioxide",
+		"d": "Nitrogen"
+	},
+	"correct": "b"
+},
+{
+	"question":"Which of the following is a non metal that remains liquid at room temperature?",
+	"answer" : {
+		"a": "Phosphorous",
+		"b": "Bromine",
+		"c": "Chlorine",
+		"d": "Helium"
+	},
+	"correct": "b"
+},{
+	"question":"Chlorophyll is a naturally occurring chelate compound in which central metal is",
+	"answer" : {
+		"a": "copper",
+		"b": "magnesium",
+		"c": "iron",
+		"d": "calcium"
+	},
+	"correct": "b"
+}]

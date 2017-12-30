@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+## Simple Angular Quiz
 
-You can use the [editor on GitHub](https://github.com/codeforbeginners/angular-quiz/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+See the working demo [link](https://codeforbeginners.github.io/angular-quiz)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A simple quiz app built on Angular.
 
-### Markdown
+### Requirements
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  1. Bootstrap (css & JS) - v3.3.7
+  2. Jquery -  v3.2.1
+  3. Angular - v1.6.4
 
+### Summary
+This Quiz app is built on Angular. It reads the data from JSON and render the data to print on your html page using angular. Little css is used to make this angular quiz app to look better.
+
+###JSON Format
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+[{
+	"question":"Brass gets discoloured in air because of the presence of which of the following gases in air?",
+	"answer" : {
+		"a": "Oxygen",
+		"b": "Hydrogen sulphide",
+		"c": "Carbon dioxide",
+		"d": "Nitrogen"
+	},
+	"correct": "b"
+},
+{
+	"question":"Which of the following is a non metal that remains liquid at room temperature?",
+	"answer" : {
+		"a": "Phosphorous",
+		"b": "Bromine",
+		"c": "Chlorine",
+		"d": "Helium"
+	},
+	"correct": "b"
+},{
+	"question":"Chlorophyll is a naturally occurring chelate compound in which central metal is",
+	"answer" : {
+		"a": "copper",
+		"b": "magnesium",
+		"c": "iron",
+		"d": "calcium"
+	},
+	"correct": "b"
+}]
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/codeforbeginners/angular-quiz/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ You can add more questions in this given format.
+ 
+ ###Support
+ If you need any help, you can rach me out to my email - [Amit Singh](iamitadvice@gmail.com)

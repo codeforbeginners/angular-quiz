@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="QuizApp">
+<head>
+	<title>Angular Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Pre Built Css -->
+	<link rel='shortcut icon' type='image/x-icon' href='images/icon.png' />
+
+	<link rel="stylesheet" href="local/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" href="main.css">
+
+	<!-- Pre built Js -->
+	
+	<script src="local/jquery/jquery.min.js"></script>
+	<script src="local/bootstrap/bootstrap.min.js"></script>
+	<!-- <script src="local/angular/angular.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
+	
+
+	<!-- Custom js -->
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class="page-header text-center">
+		<h1>Angular Quiz</h1>
+	</div>
+	<div class="container" ng-controller="QuizController as vm">
+
+		<!-- Start Page -->
+		<div class="start_quiz" ng-if="!vm.is_started">
+			<div class="row">
+				<div class="col-sm-12 text-center"><h1>Let's start this Quiz</h1></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<a href="#" class="btn btn-info btn-color" ng-click="vm.startQuiz()"><span class="fa fa-flash"></span>&nbsp;Let's Begin</a>
+				</div>
+			</div>
+		</div>
+		<!-- End of start page -->
+
+		<!-- Start of Quiz App -->
+		<div class="row quizapp" ng-if="vm.is_started && !vm.is_score">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+
+				<div class="quiz_section">
+					<div class="question" >{{vm.question}}</div>
+
+
+					<div class="option">
+						<!-- <div class="btn-group-vertical btn-block" data-toggle="buttons">
+							<label class="btn btn-custom-option btn-block" id="radioBtn" ng-repeat="(key,value) in vm.answer">
+								<input type="radio"  name="options" ng-value="key" ng-model="vm.selected"> 
+								{{value}}
+							</label>
+						</div> -->
+						<div class="option">
+							<div class="answers" ng-repeat="(key,value) in vm.answer">
+								<input type="radio" id="{{key}}" name="rr" ng-model="vm.selected" ng-value="key"/>
+								<label for="{{key}}"><span></span>{{value}}</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="submit_option text-center">
+					<div class="btn btn-block btn-custom" ng-click="vm.submitAnswer(vm.getIndex)">Submit</div>
+				</div>
+
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<!-- End of Quiz App -->
+
+		<!-- Score Page -->
+
+		<div class="score text-center" ng-if="vm.is_score">
+			<div class="col-md-12">
+				{{vm.message}}
+			</div>
+			<div class="col-md-12 ">{{vm.percentage }}%</div>
+			
+			
+
+		</div>
+		<!-- End of score page -->
+	</div>
+</div>
+</body>
+</html>

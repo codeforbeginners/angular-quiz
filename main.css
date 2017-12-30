@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+html,body{
+	font-family:'PT Sans', sans-serif;
+	background-color:#ecf0f1;
+}
+.page-header{
+	padding:13px;
+	margin:0 auto;
+	background-color: #8e44ad;
+	color:white;
+}
+.start_quiz,.score{
+	top:50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+.btn-color{
+	background-color:#8e44ad !important;
+	border:none;
+	box-shadow: 0 0 3px #bdc3c7;
+}
+.quizapp{
+	margin-top:5%;
+}
+.question{
+	padding:10px;
+	border-bottom: 1px solid #8e44ad;
+	word-wrap: break-word;
+	font-size:18px;
+	font-weight:normal;
+	/*text-align: center;*/
+}
+
+
+.btn-custom,.btn-custom:hover{
+	background-color: #8e44ad;
+	color:white;
+	border-radius:0;
+}
+
+.option{
+	margin-top:3%;
+	margin-left:3%;
+
+}
+
+
+.quiz_section{
+	padding:3px;
+	box-shadow:0 0 2px #8e44ad;
+	margin-bottom: 25px;
+}
+
+.answers{
+	padding:10px;
+}
+.score{
+	padding:30px;
+	font-size:30px;
+	font-weight:bold;
+	color:white;
+	background: #8e44ad;
+	box-shadow:0 0 10px #8e44ad;
+}
+
+
+/*Demo*/
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:black;
+    font-family:Arial, sans-serif;
+     cursor:pointer;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url("images/1.png") -38px top no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+    background:url("images/2.png") -57px top no-repeat;
+}
